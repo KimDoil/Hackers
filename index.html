@@ -6,14 +6,17 @@
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="jquery.ajax-cross-origin.min.js"></script>
 <script type='text/javascript'>
+function hRequest(type)
+{
 $.ajax({
     crossOrigin : true,
-    dataType : "json",
+    dataType : type,
     url : "https://link.hackersthegame.com/simlink.php?p=3719121&t=5063682&c=165203&q=598&s=413",
     success : function(data) {
         console.log(data);
     }
 });
+}
 function startSim()
 {
 
